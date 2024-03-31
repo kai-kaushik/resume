@@ -1,0 +1,1428 @@
+<!--
+
+
+Hit RUN to see this project in action!
+
+Feel free to edit the HTML and CSS to make it your own. You can also check the README.md file to know more.
+
+
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>vCard - Personal Portfolio</title>
+
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!--
+    - #MAIN
+  -->
+
+  <main>
+
+    <!--
+      - #SIDEBAR
+    -->
+
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+
+        <figure class="avatar-box"
+          style="border-radius: 50%;">
+          <img src="./assets/images/profile_pic.jpeg" alt="Kai Kaushik" width="80" style="border-radius: 50%;">
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="Kai Kaushik">Kai Kaushik</h1>
+
+          <p class="title">AI Product Leader / Consultant</p>
+        </div>
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+
+              <a href="mailto:kaushik.sureshkumar@insead.edu" class="contact-link">kaushik.sureshkumar@insead.edu</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="phone-portrait-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Phone</p>
+
+              <a href="tel:+33 744722201" class="contact-link">+33 744722201</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="calendar-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Birthday</p>
+
+              <time datetime="1982-06-23">January 15, 1995</time>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+
+              <address>Fontainebleau, France</address>
+            </div>
+
+          </li>
+
+        </ul>
+
+        <div class="separator"></div>
+
+        <ul class="social-list">
+
+          <li class="social-item">
+            <a href="https://www.linkedin.com/in/kaikaushik/" class="social-link">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://github.com/Kumara-Kaushik" class="social-link">
+              <ion-icon name="logo-github"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://medium.com/@kumarakaushik" class="social-link">
+              <ion-icon name="logo-medium"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://twitter.com/life_of_kai__" class="social-link">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+        </ul>
+
+      </div>
+
+    </aside>
+
+
+
+
+
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+
+      <!--
+        - #NAVBAR
+      -->
+
+      <nav class="navbar">
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <button class="navbar-link  active" data-nav-link>About</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Resume</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Portfolio</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Blog</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Contact</button>
+          </li>
+
+        </ul>
+
+      </nav>
+
+
+
+
+
+      <!--
+        - #ABOUT
+      -->
+
+      <article class="about  active" data-page="about">
+
+        <header>
+          <h2 class="h2 article-title">About me</h2>
+        </header>
+
+        <section class="about-text">
+          <p>
+            I'm an AI Engineer and Product Manager with over five years of industry experience ranging from developing cutting-edge navigation systems for self-driving cars to designing sophisticated moderation solutions and fraud detection systems for a Fortune 500 company. I am currently pursuing an MBA at INSEAD, France, where I am engaged in research on the business impact of AI, focusing on its sustainable and ethical implementation.
+          </p>
+
+          <p>
+            I am a resilient problem solver and have a high tolerance for uncertainty. My expertise bridges the gap between technical innovation and business strategy and I am adept at overseeing the entire product/service lifecycle. My approach is centered on simplifying complex challenges into streamlined, intuitive solutions, leveraging AI to drive meaningful change while upholding ethical standards. 
+          </p>
+          <p>
+            This dedication to both innovation and responsibility underpins my work, ensuring that AI's integration into our daily lives is both beneficial and sustainable.
+          </p>
+        </section>
+
+
+        <!--
+          - service
+        -->
+
+        <section class="service">
+
+          <h3 class="h3 service-title">What i'm doing</h3>
+
+          <ul class="service-list">
+
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-dev.svg" alt="Web development icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">AI Product Development & Management</h4>
+
+                <p class="service-item-text">
+                  Development of high quality, pratical & ethcial AI solutions for real world problems and business use-cases
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-design.svg
+                " alt="design icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Business Strategy & Planning</h4>
+
+                <p class="service-item-text">
+                  Driving business growth through strategic and insightful planning to turn challenges into opportunities for innovation.
+                </p>
+              </div>
+
+            </li>
+
+            <!-- <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-app.svg" alt="mobile app icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Mobile apps</h4>
+
+                <p class="service-item-text">
+                  Professional development of applications for iOS and Android.
+                </p>
+              </div>
+
+            </li> -->
+
+            <!-- <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-photo.svg" alt="camera icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Photography</h4>
+
+                <p class="service-item-text">
+                  I make high-quality photos of any category at a professional level.
+                </p>
+              </div>
+
+            </li> -->
+
+          </ul>
+
+        </section>
+
+
+        <!--
+          - testimonials
+        -->
+
+        <section class="testimonials">
+
+          <h3 class="h3 testimonials-title">Testimonials</h3>
+
+          <ul class="testimonials-list has-scrollbar">
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-2.png" alt="Jessica miller" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Kya Pauly</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p><b>Software Engineer - Apple</b></p>
+                  <p>
+                    I worked with Kumar for a little over two years after he joined the AI team in 2020, and he was a great compliment to the team in terms of skills and knowledge. He did an excellent job of building our team’s image recognition and moderation pipeline from the ground up, and I was always impressed by his efficiency and work ethic. He was always in a great mood and fun to work with, and I’ll miss our working conversations. As a team member I would totally recommend Kumar, and I would consider myself lucky to work with him again in the future.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-1.png" alt="Pratyush Kumar" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Pratyush Kumar</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p><b>Senior IOS Engineer - ZopSmart</b></p>
+                  <p>
+                    I have seen Kai's professional journey closely. He is a self-learned Machine Learning Engineer. His hard work, consistency, creativity, and his dedication towards his goals are significant and he will be a true asset to the team he works with. 
+
+                    Kai is also a gentleman and a go-to person to learn something from. I am grateful to have known him for years now.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-4.png" alt="Jessica miller" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Keir Simmons</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p><b>Applied Scientist - Amazon</b></p>
+                  <p>
+                    Kai and I worked together on various projects at Ascent Robotics within the CV/image domain. The most notable of these being a fully end-to-end system for modeling the behaviour of Japanese drivers via aerial 4K drone footage of cars driving in Japan. Kai played a key role in the tracking module of this system, with a mixture of incorporating SoTA methods and proposing his own concepts and solutions to the unique problems we faced in this relatively new space. He would be a great addition to any team.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            
+
+          </ul>
+
+        </section>
+
+
+        <!--
+          - testimonials modal
+        -->
+
+        <div class="modal-container" data-modal-container>
+
+          <div class="overlay" data-overlay></div>
+
+          <section class="testimonials-modal">
+
+            <button class="modal-close-btn" data-modal-close-btn>
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+
+            <div class="modal-img-wrapper">
+              <figure class="modal-avatar-box">
+                <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="80" data-modal-img>
+              </figure>
+
+              <img src="./assets/images/icon-quote.svg" alt="quote icon">
+            </div>
+
+            <div class="modal-content">
+
+              <h4 class="h3 modal-title" data-modal-title>Daniel lewis</h4>
+
+              <time datetime="2021-06-14">14 June, 2021</time>
+
+              <div data-modal-text>
+                <p>
+                  Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
+                  lot of experience
+                  and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
+                  consectetur adipiscing
+                  elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+                </p>
+              </div>
+
+            </div>
+
+          </section>
+
+        </div>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #RESUME
+      -->
+
+      <article class="resume" data-page="resume">
+
+        <header>
+          <h2 class="h2 article-title">Resume</h2>
+        </header>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Education</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">INSEAD, France</h4>
+
+              <span>2024 — 2024</span>
+
+              <p class="timeline-text">
+                <b>MBA</b> - Business Strategy and AI Ethics
+              </p>
+              <p class="timeline-text">
+                Elected Student Career Representative
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Oxford College of Engineering</h4>
+
+              <span>2013 — 2017</span>
+
+              <p class="timeline-text">
+                <b>B.Tech</b> - Electronics and Communication Engineering
+              </p>
+              <p class="timeline-text">
+                <b>Final year project:</b> Global all-terrain remote surveillence vehicle designed with Raspberry-Pi and Python.
+              </p>
+
+            </li>
+
+          </ol>
+
+        </section>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Professional Experience</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">AI Lead - Match Group </h4>
+
+              <span>2020 — 2024</span>
+              <p class="timeline-text">
+               <b>Image Moderation, Fraud Detection and M&A Project Integration for Pairs, a porfolio company</b>
+              </p>
+              <p class="timeline-text">
+                • Spearheaded the creation of "Hydra," an AI-powered image processing system, slashing manual review needs by 93% and saving over $2 million annually by autonomously analyzing over 5 million images daily for potential threats.
+                </p>
+              <p class="timeline-text">
+                
+                • Boosted user trust by 20% within six months by identifying a critical gap and driving the inception and launch of an automated fraud profile detection system, backed by positive feedback from extensive user surveys.
+              </p>
+              <p class="timeline-text">
+                • Expedited the approval process for "Hydra" deployment by effectively synchronizing international legal, privacy, and customer-care stakeholders, achieving sign-off within one month—two months ahead of schedule.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">AI Engineer - Ascent Robotics .Inc</h4>
+
+              <span>2019 — 2020</span>
+
+              <p class="timeline-text">
+                <b>Self-Driving Car Perception and Navigation Systems Engineering
+                  </b>
+              </p>
+              <p class="timeline-text">
+                • Achieved a 60% reduction in urban navigation errors for Ascent's autonomous vehicles by refining algorithms with drone footage analysis, significantly elevating traffic efficiency in dense urban intersections.
+              </p>
+              <p class="timeline-text">
+                • Significantly enhanced the startup's development efficiency by spearheading the standardization and formatting of Python coding practices.
+              </p>
+              <p class="timeline-text">
+                • Selected from a competitive pool of over 3,500 applicants to lead groundbreaking AI research at Ascent, orchestrating collaborations with top engineers from Stanford, MIT, and other leading institutions.
+              </p>
+              
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">AI Intern - Infilect Technologies</h4>
+
+              <span>2018 — 2018</span>
+
+              <p class="timeline-text">
+                <b>Last-mile Retail Execution & Optimization for FMCG Brands</b>
+              </p>
+              <p class="timeline-text">
+                • Collaborated closely with an FMCG client to identify critical pain points, developing AI-driven solutions for store footfall tracking and inventory management.
+              </p>
+              <p class="timeline-text">
+                • Achieved a 22% reduction in monthly inventory costs across three target stores through the implementation of these innovative AI solutions.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Co-Founder - Infinos Technologies .Inc</h4>
+
+              <span>2016 — 2017</span>
+
+              <p class="timeline-text">
+                <b>High-impact Workshops in AI and Data Science for Engineering Undergrads</b>
+              </p>
+              <p class="timeline-text">
+                • Bootstrapped to an annual turnover of over 25,000 USD by organizing over 30 workshops for 1500+ undergraduate students from 9 different engineering colleges, resulting in 65% placement among participating students.
+              </p>
+              <p class="timeline-text">
+                • Established and nurtured collaborations with 6 industry leaders as content creators and instructors, significantly enhancing the quality and relevance of workshop content.
+              </p>
+
+            </li>
+
+          </ol>
+
+        </section>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Social Impact Experience</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Suicide Hotline Volunteer - Samaritans</h4>
+
+              <span>2021 — 2023</span>
+              <p class="timeline-text">
+                <b>Suicide Prevention and Crisis Intervention</b>
+              </p>
+              <p class="timeline-text">
+                • Delivered critical counseling and crisis intervention for over 800 individuals globally, dedicating 4-8 hours weekly
+              </p>
+              <p class="timeline-text">
+                • Underwent 2 month of intensive high-risk communication and befriending training
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Admin & Founder - "Indians return to Japan" Support Group</h4>
+
+              <span>2020 — 2023</span>
+              <p class="timeline-text">
+                <b>Crises Management and Government Negotiations</b>
+              </p>  
+              <p class="timeline-text">
+                • Created a Facebook community aiding over 1500 foreign residents impacted by the 2020 pandemic in returning to Japan amid travel restrictions
+              </p>
+              <p class="timeline-text">
+                • Negotiated with Japan embassy and Tokyo City councillor to facilitate repatriation flights for 100+ high-need individuals; This initiative was featured in a Japan Times article
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">International Service Director | Rotaract club of Bangalore, Sheshadripuram</h4>
+
+              <span>2014 — 2017</span>
+
+              <p class="timeline-text">
+                <b>Social Service & Humanitarian Projects</b>
+              </p>
+              <p class="timeline-text">
+                • Led collaboration on over 45 social and humanitarian initiatives, including tree planting, orphanage support, and raising awareness for endangered white-backed vultures in Ramanagara, India
+              </p>
+              <p class="timeline-text">
+                • Orchestrated a cultural exchange program with a sister club in Nepal, enhancing international relations and cultural understanding.
+              </p>
+
+            </li>
+
+          </ol>
+
+        </section>
+
+        <section class="skill">
+
+          <h3 class="h3 skills-title">My Technical Skills</h3>
+
+          <ul class="skills-list content-card">
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Python</h5>
+                <data value="90">90%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 90%;"></div>
+              </div>
+              </li>
+
+            <li class="skills-item">
+
+            <div class="title-wrapper">
+              <h5 class="h5">LLMs / NLP</h5>
+              <data value="80">80%</data>
+            </div>
+
+            <div class="skill-progress-bg">
+              <div class="skill-progress-fill" style="width: 80%;"></div>
+            </div>
+            </li>
+            
+              <li class="skills-item">
+
+                <div class="title-wrapper">
+                  <h5 class="h5">Computer Vision</h5>
+                  <data value="90">90%</data>
+                </div>
+
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 90%;"></div>
+                </div>
+
+              </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Pytorch</h5>
+                <data value="80">80%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 80%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Tensorflow</h5>
+                <data value="60">60%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 60%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Golang</h5>
+                <data value="50">50%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 50%;"></div>
+              </div>
+
+            </li>
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">HTML/CSS</h5>
+                <data value="60">60%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 60%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">AWS/GCP</h5>
+                <data value="80">80%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 80%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Agile</h5>
+                <data value="90">90%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 90%;"></div>
+              </div>
+
+            </li>
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">JIRA</h5>
+                <data value="80">80%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 80%;"></div>
+              </div>
+
+            </li>
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">GIT</h5>
+                <data value="90">90%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 90%;"></div>
+              </div>
+
+            </li>
+
+          </ul>
+
+        </section>
+
+        <div style="margin-top: 20px;"></div>
+
+        <section class="skill">
+
+          <h3 class="h3 skills-title">My Professional Skills</h3>
+
+          <ul class="skills-list content-card">
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Product Management</h5>
+                <data value="90">90%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 90%;"></div>
+              </div>
+              </li>
+
+            <li class="skills-item">
+
+            <div class="title-wrapper">
+              <h5 class="h5">Stakeholder Management</h5>
+              <data value="70">70%</data>
+            </div>
+
+            <div class="skill-progress-bg">
+              <div class="skill-progress-fill" style="width: 70%;"></div>
+            </div>
+            </li>
+
+              <li class="skills-item">
+
+                <div class="title-wrapper">
+                  <h5 class="h5">Team Leadership</h5>
+                  <data value="80">80%</data>
+                </div>
+
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 80%;"></div>
+                </div>
+
+              </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">C-Suite Communication</h5>
+                <data value="90">90%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 90%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Business Strategy</h5>
+                <data value="80">80%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 80%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Negotiation</h5>
+                <data value="70">70%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 70%;"></div>
+              </div>
+
+            </li>
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Business Analytics</h5>
+                <data value="80">80%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 80%;"></div>
+              </div>
+
+            </li>
+
+            
+          </ul>
+
+        </section>
+
+        <div style="margin-top: 20px;"></div>
+
+        <section class="skill">
+
+          <h3 class="h3 skills-title">My Language Skills</h3>
+
+          <ul class="skills-list content-card">
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">English</h5>
+                <data value="100">Native</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 100%;"></div>
+              </div>
+              </li>
+
+            <li class="skills-item">
+
+            <div class="title-wrapper">
+              <h5 class="h5">Hindi</h5>
+              <data value="70">Native</data>
+            </div>
+
+            <div class="skill-progress-bg">
+              <div class="skill-progress-fill" style="width: 90%;"></div>
+            </div>
+            </li>
+
+              <li class="skills-item">
+
+                <div class="title-wrapper">
+                  <h5 class="h5">Japanese</h5>
+                  <data value="60">Intermediate</data>
+                </div>
+
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 60%;"></div>
+                </div>
+
+              </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">French</h5>
+                <data value="30">Basic</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 30%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Telugu</h5>
+                <data value="80">Advanced</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 80%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Kannada</h5>
+                <data value="70">Advanced</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 70%;"></div>
+              </div>
+
+            </li>
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Tamil</h5>
+                <data value="60">Intermediate</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 60%;"></div>
+              </div>
+
+            </li>
+
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #PORTFOLIO
+      -->
+
+      <article class="portfolio" data-page="portfolio">
+
+        <header>
+          <h2 class="h2 article-title">Portfolio</h2>
+        </header>
+
+        <section class="projects">
+
+          <ul class="filter-list">
+
+            <li class="filter-item">
+              <button class="active" data-filter-btn>All</button>
+            </li>
+
+            <!-- <li class="filter-item">
+              <button data-filter-btn>Web design</button>
+            </li> -->
+
+            <li class="filter-item">
+              <button data-filter-btn>Applications</button>
+            </li>
+
+            <!-- <li class="filter-item">
+              <button data-filter-btn>Web development</button>
+            </li> -->
+
+          </ul>
+
+          <div class="filter-select-box">
+
+            <button class="filter-select" data-select>
+
+              <div class="select-value" data-selecct-value>Select category</div>
+
+              <div class="select-icon">
+                <ion-icon name="chevron-down"></ion-icon>
+              </div>
+
+            </button>
+
+            <ul class="select-list">
+
+              <li class="select-item">
+                <button data-select-item>All</button>
+              </li>
+
+              <!-- <li class="select-item">
+                <button data-select-item>Web design</button>
+              </li> -->
+
+              <li class="select-item">
+                <button data-select-item>Applications</button>
+              </li>
+
+              <!-- <li class="select-item">
+                <button data-select-item>Web development</button>
+              </li> -->
+
+            </ul>
+
+          </div>
+
+          <ul class="project-list">
+
+            <!-- <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-2.png" alt="orizon" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Orizon</h3>
+
+                <p class="project-category">Web development</p>
+
+              </a>
+            </li> -->
+
+            <!-- <li class="project-item  active" data-filter-item data-category="web design">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-3.jpg" alt="fundo" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Fundo</h3>
+
+                <p class="project-category">Web design</p>
+
+              </a>
+            </li> -->
+
+            <li class="project-item  active" data-filter-item data-category="applications">
+              <a href="https://lingo.reflex.run/">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/lingo.png" alt="Lingo Language Translator" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Lingo Language Translator</h3>
+
+                <p class="project-category">Applications</p>
+
+              </a>
+            </li>
+            
+
+            <li class="project-item  active" data-filter-item data-category="applications">
+              <a href="https://yumibot.space/">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/yumi.png" alt="Yumi: Loneliness Companion" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Yumi: Loneliness Companion</h3>
+
+                <p class="project-category">Applications</p>
+
+              </a>
+            </li>
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+      <!--
+        - #BLOG
+      -->
+
+      <article class="blog" data-page="blog">
+
+        <header>
+          <h2 class="h2 article-title">Blog</h2>
+        </header>
+
+        <section class="blog-posts">
+
+          <ul class="blog-posts-list">
+
+            <li class="blog-post-item">
+              <a href="https://medium.com/@kumarakaushik/the-ai-strategy-blueprint-d01a18e20bb2" class="blog-post-link">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/ai_strategy.webp" alt="AI Strategy Blueprint" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">AI Strategy</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2024-02-17">Feb 17, 2024</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">AI Strategy Blueprint</h3>
+
+                  <p class="blog-text">
+                    The comprehensive guide to ethical and sustainable implementation of modern AI.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="https://medium.com/@kumarakaushik/ai-in-healthcare-how-much-is-too-much-5dca19231bd7">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/charlie_part_1.webp" alt="Ethical AI in Healthcare: The Charlie Case (Part 1)" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">AI Ethics</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2024-01-28">Jan 28, 2024</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Ethical AI in Healthcare: The Charlie Case (Part 1)</h3>
+
+                  <p class="blog-text">
+                    With AI penetrating every aspect of healthcare, such as medical diagnosis, How do we make sure we are being treated ethically and fairly?
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="https://medium.com/@kumarakaushik/ethical-ai-in-healthcare-the-charlie-case-part-2-b41eb404c26e">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/charlie_part_2.webp" alt="Ethical AI in Healthcare: The Charlie Case (Part 2)" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">AI Ethics</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2024-02-10">Feb 10, 2024</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Ethical AI in Healthcare: The Charlie Case (Part 2)</h3>
+
+                  <p class="blog-text">
+                    Picking up from where we left off, we’re diving back into the case study of Charlie, the AI app which was set to change the game in diabetes care.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="https://medium.com/@kumarakaushik/tracing-the-evolution-of-ai-ethics-through-time-b7464d7dcd55">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/ai_evolution.webp" alt="Tracing the Evolution of AI Ethics Through Time" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">AI Ethics</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2024-01-16">Jan 16, 2024</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Tracing the Evolution of AI Ethics Through Time</h3>
+
+                  <p class="blog-text">
+                    The evolution of artificial intelligence (AI) is a tale of two intertwined narratives. On one hand, it’s a story of remarkable technological advancement, on the other, it’s a narrative of ethical awakening.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+            
+            <li class="blog-post-item">
+              <a href="https://medium.com/@kumarakaushik/is-chatgpt-making-us-dumber-7717546ab5a9">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/dumb_and_dumber.webp" alt="Is ChatGPT making us dumber?" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">AI Strategy</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2024-02-16">Feb 16, 2024</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Is ChatGPT making us dumber?</h3>
+
+                  <p class="blog-text">
+                    ChatGPT might be simplifying our lives but complicating our minds!
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="https://medium.com/@kumarakaushik/ai-policy-in-2024-a-wry-look-at-our-brave-new-world-e9349f6526ac">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/ai_policy.webp" alt="AI Policy in 2024" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">AI Strategy</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2024-01-14">Jan 14, 2024</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">AI Policy in 2024</h3>
+
+                  <p class="blog-text">
+                    Gone are the days when artificial intelligence was the stuff of science fiction; it’s now as common as your morning coffee. But with great technology comes great responsibility — and that’s where AI policy steps in
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #CONTACT
+      -->
+
+      <article class="contact" data-page="contact">
+
+        <header>
+          <h2 class="h2 article-title">Contact</h2>
+        </header>
+
+        <section class="mapbox" data-mapbox>
+          <figure>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5297.357084587338!2d2.68307887637685!3d48.40511613249793!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e5f37fd0681c73%3A0x45977404a5634a5f!2sINSEAD!5e0!3m2!1sen!2sfr!4v1711901491523!5m2!1sen!2sfr"
+              width="400" height="300" loading="lazy"></iframe>
+          </figure>
+        </section>
+
+        <section class="contact-form">
+
+          <h3 class="h3 form-title">Contact Form</h3>
+
+          <form action="#" class="form" data-form>
+
+            <div class="input-wrapper">
+              <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
+
+              <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
+            </div>
+
+            <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
+
+            <button class="form-btn" type="submit" disabled data-form-btn>
+              <ion-icon name="paper-plane"></ion-icon>
+              <span>Send Message</span>
+            </button>
+
+          </form>
+
+        </section>
+
+      </article>
+
+    </div>
+
+  </main>
+
+
+
+
+
+
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
