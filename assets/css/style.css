@@ -940,6 +940,9 @@ main {
   display: inline;
 }
 
+h4.timeline-item-title .custom-link-title {
+  display: inline !important;
+}
 /**
  * skills 
  */
