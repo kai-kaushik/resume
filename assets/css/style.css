@@ -916,6 +916,29 @@ main {
   line-height: 1.6;
 }
 
+.custom-link {
+  color: lightgray; /* Default text color */
+  text-decoration: none; /* No underline by default */
+}
+
+/* Hover state of the link */
+.custom-link:hover {
+  color: #3053e2; /* Text color changes to blue on hover */
+  text-decoration: underline; /* Underline appears on hover */
+}
+
+.custom-link-title {
+  color: lightgray; /* Default text color */
+  text-decoration: none; /* No underline by default */
+  display: inline;
+}
+
+/* Hover state of the link */
+.custom-link-title:hover {
+  color: #3053e2; /* Text color changes to blue on hover */
+  text-decoration: underline; /* Underline appears on hover */
+  display: inline;
+}
 
 /**
  * skills 
@@ -1160,6 +1183,7 @@ main {
   gap: 20px;
 }
 
+
 .blog-post-item>a {
   position: relative;
   background: var(--border-gradient-onyx);
@@ -1176,6 +1200,15 @@ main {
   border-radius: inherit;
   background: var(--eerie-black-1);
   z-index: -1;
+}
+
+.blog-post-item {
+  display: none;
+}
+
+.blog-post-item.active {
+  display: block;
+  animation: scaleUp 0.25s ease forwards;
 }
 
 .blog-banner-box {

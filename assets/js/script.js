@@ -58,7 +58,7 @@ overlay.addEventListener("click", testimonialsModalFunc);
 // custom select variables
 const select = document.querySelector("[data-select]");
 const selectItems = document.querySelectorAll("[data-select-item]");
-const selectValue = document.querySelector("[data-selecct-value]");
+const selectValue = document.querySelector("[data-select-value]");
 const filterBtn = document.querySelectorAll("[data-filter-btn]");
 
 select.addEventListener("click", function () { elementToggleFunc(this); });
@@ -112,6 +112,61 @@ for (let i = 0; i < filterBtn.length; i++) {
   });
 
 }
+
+
+// // Custom select variables for the blog section
+// const blogSelect = document.querySelector("[data-blog-select]");
+// const blogSelectItems = document.querySelectorAll("[data-blog-select-item]");
+// const blogSelectValue = document.querySelector("[data-blog-select-value]");
+// const blogFilterBtns = document.querySelectorAll("[data-blog-filter-btn]");
+// const blogFilterItems = document.querySelectorAll("[data-blog-filter-item]");
+
+// // Function to toggle the element's active state
+// function elementToggleFunc(element) {
+//   element.classList.toggle("active");
+// }
+
+// // Click event for the blog select dropdown
+// blogSelect.addEventListener("click", function () { elementToggleFunc(this); });
+
+// // Click event for all blog select items
+// for (let i = 0; i < blogSelectItems.length; i++) {
+//   blogSelectItems[i].addEventListener("click", function () {
+//     let selectedValue = this.innerText.toLowerCase();
+//     blogSelectValue.innerText = this.innerText; // Correct typo in 'data-selecct-value' to 'data-select-value'
+//     elementToggleFunc(blogSelect);
+//     filterBlogFunc(selectedValue);
+//   });
+// }
+
+// // Filter function for blog items
+// const filterBlogFunc = function (selectedValue) {
+//   for (let i = 0; i < blogFilterItems.length; i++) {
+//     if (selectedValue === "all") {
+//       blogFilterItems[i].classList.add("active");
+//     } else if (selectedValue === blogFilterItems[i].dataset.category) {
+//       blogFilterItems[i].classList.add("active");
+//     } else {
+//       blogFilterItems[i].classList.remove("active");
+//     }
+//   }
+// };
+
+// // Click event for all blog filter button items (for larger screens, if applicable)
+// let lastClickedBlogBtn = blogFilterBtns[0]; // Assuming there's a default active button
+
+// for (let i = 0; i < blogFilterBtns.length; i++) {
+//   blogFilterBtns[i].addEventListener("click", function () {
+//     let selectedValue = this.innerText.toLowerCase();
+//     blogSelectValue.innerText = this.innerText;
+//     filterBlogFunc(selectedValue);
+
+//     lastClickedBlogBtn.classList.remove("active");
+//     this.classList.add("active");
+//     lastClickedBlogBtn = this;
+//   });
+// }
+
 
 
 
