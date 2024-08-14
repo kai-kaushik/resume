@@ -928,7 +928,7 @@ main {
 }
 
 .custom-link-title {
-  color: lightgray; /* Default text color */
+  color: rgb(255, 255, 255); /* Default text color */
   text-decoration: none; /* No underline by default */
   display: inline;
 }
