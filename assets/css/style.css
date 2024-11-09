@@ -917,14 +917,37 @@ main {
 } */
 
 /* Improve readability for bullet points */
+
 .timeline-text {
+  position: relative;
   color: var(--light-gray);
   font-weight: var(--fw-300);
-  line-height: 1.6; /* Increases space between lines within the same bullet point */
-  margin-bottom: 8px; /* Adds space between different bullet points */
+  line-height: 1.6; /* Space within multi-line text */
+  margin-bottom: 8px; /* Space between each bullet point */
+  padding-left: 20px; /* Indent the start of each bullet */
 }
 
-.timeline-list p.timeline-text {
+/* Add a custom bullet */
+.timeline-text::before {
+  content: "•"; /* Bullet point */
+  position: absolute;
+  left: 0; /* Aligns bullet with text */
+  color: var(--light-gray); /* Bullet color */
+  font-size: 1em; /* Adjust bullet size if needed */
+  line-height: 1.6; /* Matches text spacing */
+}
+
+/* Exclude bullet point for description-text class */
+.description-text::before {
+  content: none;
+}
+
+.description-text {
+  padding-left: 0; /* Remove left padding */
+  text-indent: 0; /* Remove text indent */
+}
+
+.timeline-list {
   display: list-item; /* Adds bullet points */
   list-style-type: disc;
   list-style-position: outside;
