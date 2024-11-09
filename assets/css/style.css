@@ -948,9 +948,27 @@ main {
 }
 
 .timeline-list {
-  display: list-item; /* Adds bullet points */
   list-style-type: disc;
   list-style-position: outside;
+}
+
+.timeline-text {
+  position: relative;
+  color: var(--light-gray);
+  font-weight: var(--fw-300);
+  line-height: 1.6;
+  margin-bottom: 8px;
+  padding-left: 20px;
+}
+
+/* Custom bullet point for .timeline-text only */
+.timeline-text::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: var(--light-gray);
+  font-size: 1em;
+  line-height: 1.6;
 }
 
 .custom-link {
