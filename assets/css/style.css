@@ -910,10 +910,24 @@ main {
   box-shadow: 0 0 0 4px var(--jet);
 }
 
-.timeline-text {
+/* .timeline-text {
   color: var(--light-gray);
   font-weight: var(--fw-300);
   line-height: 1.6;
+} */
+
+/* Improve readability for bullet points */
+.timeline-text {
+  color: var(--light-gray);
+  font-weight: var(--fw-300);
+  line-height: 1.6; /* Increases space between lines within the same bullet point */
+  margin-bottom: 8px; /* Adds space between different bullet points */
+}
+
+.timeline-list p.timeline-text {
+  display: list-item; /* Adds bullet points */
+  list-style-type: disc;
+  list-style-position: outside;
 }
 
 .custom-link {
