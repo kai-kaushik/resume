@@ -1113,10 +1113,11 @@ h4.timeline-item-title .custom-link-title {
 }
 
 .project-list {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 30px;
+  display: block;
+  width: 100%;
   margin-bottom: 10px;
+  /* Clear floats */
+  overflow: hidden;
 }
 
 .project-item {
@@ -1125,7 +1126,30 @@ h4.timeline-item-title .custom-link-title {
 
 .project-item.active {
   display: block;
+  float: left;
+  width: calc(50% - 15px); /* 50% width minus half the gap */
+  margin-right: 30px; /* gap between items */
+  margin-bottom: 30px;
   animation: scaleUp 0.25s ease forwards;
+}
+
+/* Remove margin-right from every second item */
+.project-item.active:nth-child(2n) {
+  margin-right: 0;
+}
+
+/* Clear float after every second item */
+.project-item.active:nth-child(2n + 1) {
+  clear: left;
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+  .project-item.active {
+    width: 100%;
+    margin-right: 0;
+    float: none;
+  }
 }
 
 @keyframes scaleUp {
@@ -1145,12 +1169,24 @@ h4.timeline-item-title .custom-link-title {
 .project-img {
   position: relative;
   width: 100%;
-  height: 200px;
+  padding-top: 56.25%; /* This creates a 16:9 aspect ratio */
   border-radius: 16px;
   overflow: hidden;
   margin-bottom: 15px;
 }
 
+.project-img img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  transition: var(--transition-1);
+}
+
+/* Keep your other project-img related styles the same */
 .project-img::before {
   content: "";
   position: absolute;
@@ -1169,7 +1205,7 @@ h4.timeline-item-title .custom-link-title {
 
 .project-item-icon-box {
   --scale: 0.8;
-
+  position: absolute;
   background: var(--jet);
   color: var(--orange-yellow-crayola);
   position: absolute;
